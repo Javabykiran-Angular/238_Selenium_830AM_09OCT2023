@@ -1,0 +1,40 @@
+Welcome To Selenium Automation
+				  Sumit Raokhande 
+Profile : - 
+- B.E.Electronics, KBP satara
+- M.Tech Electronics, Walchand College Sangli
+- C-Dac Wimc, Sunbeam pune
+- worked as Mobile Application developer at tivre business solution
+- worked on J2ME,Symbian,Windows Mobile,Reaserach Motion
+- Worked as Android developer at veetron 
+- Live android application prasieo,autohub,garage
+- Worked as JDE Developer of Oracle Product
+- Worked as OpenSDK developer
+- work as angular developer
+- work on google cloud & docker 
+
+Software Link
+https://javabykiran.in/selenium/javabykiran-Selenium-Softwares.zip
+
+
+- Daily Session mon to Frid 
+- Duration of time 1.30min avg it may increase or decrease depends on Topic 
+- Duration 40 to 45 Hrs 
+- Selenium Project is done 
+- Interview Questions All 
+- There are no any extra triner for doubt solving session if u have doubt 
+	u have coonect metting before 10 mins of the session or u can wait after 10 to 15 mins after session 
+- u have to coonect on time before 5 mins 
+- Don't miss any session u have to go through the prevoius session 
+- u will get recording on portal 
+- Daily Practice is required 
+- I conduct test - minium 3 Test 
+- what i want required form ur side 
+	1 Knows OOPS Concept
+	2 Knows Core Java 
+	3 Knows Basics of HTML
+	4 Two way communication
+- All Sourece code Given & soft copy notes will also given expcept images
+	
+ - Eclipse => mars, 2021-06 4.20.0,4.23.0.
+ - 
