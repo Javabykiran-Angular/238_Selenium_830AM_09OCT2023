@@ -1,0 +1,43 @@
+Last Lectue
+1 What is BRD?
+	Businsess requirement document 
+	- To gather requirement client=> process 
+	BRD => 
+		1 login username/email id /id 
+		2 password => ....
+		3 emaild id is not appropriate => ..
+			expected Result 
+			actual result => it is not a part of BRD 
+		4 whether password is valid => 
+		...
+		=> Developer As well as Tester 
+ 	
+2 How to write Test Cases
+
+3 What is selenium?
+	- it is a automation tool/sw
+	- it is open source lib.
+	- it automate ur application=> web application 
+
+4 Advantages of selenium
+	1 It is open source 
+	2 it is used for web based application
+	3 It support all platform(os=> windows,linux,mac,suse,ubantu) 
+	4 it required less time to excecute
+	5 all browser support (chrome,firfox,edge,IE,safari,opera)
+	6 selenium support multiple lang.
+5 Disadvantages of selenium
+	1 we can't test desktop application (word,notepad,ppt,calculator)
+	2 it not test captcha,file download ,image 
+	3 it is not support mobile native application 
+
+sumit@thekiranacademy.com
+
+Today Lecture
+1 Selenium Support Lang.
+	1 java
+	2 c#
+	3 python
+	4 ruby
+	5 Javascript
+2 Simple Program
