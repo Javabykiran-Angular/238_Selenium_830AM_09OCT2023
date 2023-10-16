@@ -1,0 +1,27 @@
+Last Lectue
+1 how to Access HTML Element
+	s.setproperty("..","...");
+	Webdriver driver=new Ch....;
+	driver.get("..");
+	WebElement labelText=driver.findElement(By.xpath("..."));
+	String strlabel=labelText.getText();
+	
+	WebElement emailElement=driver.findElement(By.xpath("""));
+	emailElement.sendKeys("")
+	...
+	driver.findElement(By.xpath("")).click();
+
+Summary 
+1 How to access HTML element?
+2 What is findElement?
+3 What is By & uses? 
+4 What is use of Xpath?
+5 getText()
+6 SendKeys("");
+7 Click()
+
+Today Lecture
+1 How to automate dropdown
+2 How to automate radio Button
+3 How to automate alert window
+4 How to use switch
