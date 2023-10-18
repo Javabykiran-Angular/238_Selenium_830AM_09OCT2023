@@ -1,0 +1,38 @@
+Last Lectue
+1 Locators
+	- To access/Locate a web element form document(HTML) 
+	1 Id
+	2 name
+	3 linkText 
+		- It generally used for anchor tag <a href=""> Home </a>
+	4 partialLinkText
+	5 tag name 
+	6 Attributes
+	7 class name 
+	8 Dynamic xpath => pending 
+	
+	driver.findElement(By.linkText("Register a..")).click();
+	driver.findElement(By.partialLinkText("Register ")).click();
+	
+	driver.findElement(By.id("name")).sendKeys("..");
+	driver.findElement(By.name("...")).sendKeys("..");
+	
+	List<WebElement> list= driver.findElements(By.tagName("input"));
+	
+	for(int i=0;i<list.size();i++){
+		WebElement element=list.get(i);
+		if(element.getAttribute("placeholder").equalIgnoreCase("email")){
+			element.sendKeys("..")
+		}
+	}
+	
+	driver.findElement(By.clasName("btn")).click();
+	
+	
+	summary
+	1 what is locators?
+	2 How many locators & explain?
+
+Today Lecture
+1 navigation Command
+2 Modify the Code as Per Industry standards
