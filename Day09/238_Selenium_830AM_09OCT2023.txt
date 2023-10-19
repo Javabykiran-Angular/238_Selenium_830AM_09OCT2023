@@ -1,0 +1,49 @@
+Last Lecture
+1 navigation Command
+
+		driver.navigate().back();
+		driver.navigate().forwaard();
+		driver.navigate().refresh();		
+	
+2 Modify the Code as Per Industry standards
+
+	class Configuration{
+		Webdriver driver;
+		
+		public void browserSetting(String url){
+			System.setProperty(...);
+			driver=new ChromeDriver();
+			driver.get(url);
+		}
+		
+		public void login(){
+			WebElement emailElement= accessByXpath("...")
+			emailElement.sendKeyes("....")
+			
+			WebElement passwordId=accessByID("..");
+			passwordId.sendKeyes("")
+			....
+		}
+		
+		public WebElement accessByXpath(String xpath){
+			return (driver.findElement(BY.xpath(xpath)));
+		}
+		
+		public WebElement accessByID(String id){
+			return (driver.findElement(BY.id(id)));
+		}
+		
+	}
+	
+class DemoMain extends Configuration{
+	
+	psvm(){
+		DemoMain obj=new DemoMain();
+		obj.browserSetting("...");
+		obj.login();
+	}
+}
+
+
+Today Lecture
+1 Window handle in selenium
