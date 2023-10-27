@@ -1,0 +1,54 @@
+Last Lecture
+1 Discuss Test
+2 iFrame Automate
+ - It is HTML Tag
+ - iframe is webElement
+ - most of time it is used for display pop up , other website conetent to display, to embbed video 
+ 
+	driver.switchTo().frame("webform");
+ 
+ try{
+ Thread.sleep(5000);  
+ 
+ driver.findElement(By.xpath("...")).click();
+ 
+ }catch(...){
+ 
+ }catch(Exception e){
+	e.printstactStrace();
+ }
+ 
+ summery
+ 1 What iframe?
+ 2 use of iframe?
+ 3 how to automate iFrame
+ 4 how to access iframe webelement?
+
+Today Lecture
+1 What is webtable?
+2 How to automate table?
+
+	<table>
+		<th>
+			...
+			</th>
+		<tr>
+			<td> </td>
+		</tr>
+	</table>
+	
+	summery
+	1 How to access table data/webtable?
+	List<WebElment> list= driver.findElements(By.tagname("tr"))
+	for(){
+	...
+	list.get(i).findElements(By.tagname("td"));
+	for(){
+	....
+	}
+	}
+	
+	
+	
+	
+
