@@ -1,0 +1,65 @@
+Last Lecture
+1 What is webtable?
+	
+2 How to automate table?
+
+	<table>
+		<th>
+			...
+			</th>
+		<tr>
+			<td> </td>
+		</tr>
+	</table>
+	
+	List<WebElement> listrow= driver.findElements(By.tagname("tr"));
+	
+	for(int i=1;i<listrow.size();i++){
+		
+		List<WenElement> collist= listrow.get(i).findElements(By.tagName("td"));
+		
+		for(int j=0;j<collist.size();j++){
+			String str=collist.get(j).getText();
+			...
+		}
+		
+	}
+	
+	
+	summary & Interview Questions
+	1 How to access table data/webtable?
+	List<WebElment> list= driver.findElements(By.tagname("tr"))
+	for(){
+	...
+	list.get(i).findElements(By.tagname("td"));
+	for(){
+	....
+	}
+	}
+	
+Today Lecture
+1 What is Synchronization
+2 Wait in Selenium
+3 implicit wait
+	- It wait full web application 
+	- We have to give duration for wait 
+4 explicit wait => fluent wait 
+	- it wait a particular web element
+	- We have to give duration for wait 
+	- WebDriverWait use => we send deiver for wait period 
+	- we have to set a conditions 
+5 Difference between implicit wait & explicit wait 
+	
+summary & Interview Questions
+1 What is Synchronization
+2 How many waits are present?
+3 what is implicit wait?
+	driver.manage().timeOuts().implicitWait(5,unit..);
+4 What is Explicit wait?
+	WebDriberWait wait=new WebDriberWait(driver,5);
+	WebElement element= wait.until(ExpectedConditions.visibilityOfLocated(By.name(...)));
+5 Difference between implicit wait & explicit wait
+
+	
+	
+
