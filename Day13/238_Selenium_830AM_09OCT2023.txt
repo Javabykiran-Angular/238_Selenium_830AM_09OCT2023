@@ -1,0 +1,62 @@
+Last Lecture
+1 What is Synchronization
+2 Wait in Selenium
+3 implicit wait
+	- It wait full web application 
+	- We have to give duration for wait 
+4 explicit wait => fluent wait 
+	- it wait a particular web element
+	- We have to give duration for wait 
+	- WebDriverWait use => we send driver for wait period 
+	- we have to set a conditions 
+	WebElement element= wait.until(ExpectedConditions.visisbiltyOfElementLocated(By.name("..")))
+	
+5 Difference between implicit wait & explicit wait 
+driver.manage().timeouts().implicitwait(5,TimeUnit.seconds);
+
+
+	
+summary & Interview Questions
+1 What is Synchronization
+2 How many waits are present?
+3 what is implicit wait?
+	driver.manage().timeOuts().implicitWait(5,unit..);
+4 What is Explicit wait?
+	WebDriberWait wait=new WebDriberWait(driver,5);
+	WebElement element= wait.until(ExpectedConditions.visibilityOfLocated(By.name(...)));
+5 Difference between implicit wait & explicit wait
+
+	
+Today Lecture
+1 ScreenShot of web page 
+	1 Take a screen shot in file format=> for  typecasting 
+	2 it is in Image file(file format) format to capture a screenshot
+	3 Tell them to store your screenshot => destination path 
+	4 It copy ur file to destination path 
+2 How to Use Properties file
+	- what is use ?
+		- It holds ur configuration data 
+	- It store data into key & value format 
+	
+	File source= ((TakesScreeShot) driver).getScreenShotAs(OutputType.file);
+	
+	Fie target=new File("...\\login.png");
+	try...
+	FileHandler.copy(source,target);
+	
+	Key & value 
+	username=sumit
+	password:sumit@123
+	url=...
+	
+	
+	FileInputStream fis=new FileInputStream(...)
+	Properties props=new Properties();
+	props.load(fis);
+	String str= props.getProperty("...")
+	
+summary & Interview Questions
+1 Write down some lines of code for taking screenshot?
+2 How to use Properties files in selenium?
+3 What is TakesScreeShot?
+4 what is use of Properties file?
