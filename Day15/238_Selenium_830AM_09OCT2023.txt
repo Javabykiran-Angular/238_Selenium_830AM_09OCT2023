@@ -1,0 +1,66 @@
+Last Lecture
+1 Why we use excel sheet ?
+	- To store test data 
+2 How to Access Excel Sheet Data 
+2 Apache POI Lib
+	2010
+
+summary & Interview Questions
+1 Why we use Apache POI 
+2 How to Access Excel Sheet Data?
+3 Why we use excel sheet ?
+
+	try{
+	FileInputStream fis=new FileInputStream("...")
+	
+	XSSFWorkbook workbook=new XSSFWorkbook(fis);
+	XSSFSheet sheet= workbook.getSheet("Sheet1");
+//	XSSFRow row= sheet.getRow(0)
+	//XSSFCell cell= row.getCell(0);
+	//cell.getStringCellValue();
+	
+	int rowcount= sheet.getLastrowNum();
+	
+	for(int i=0;i<=rowcount;i++){
+		XSSFRow row= sheet.getRow(i);
+		
+		int cellcount= row.getLastCellnum();
+		
+		for(int j=0;j<cellcount;j++){
+			XSSFCell cell=row.getcell(j);
+			cell.getStringCellValue();
+		}
+		
+	}
+	
+	
+	}catch(...){
+	
+	}
+	
+	
+Today Lecture
+1 Dynamic xpath
+2 why we use dynamic xpath
+	- It is used to locate ur webelement
+	- It allows you to locate elements on a web page based on their dynamic characteristics, such as changing IDs, names, classes, or other attributes.
+ 
+ 1 absolute xpath
+		-/ -> used single slash to calculate 
+		- it starts from its root node or base node => /html 
+		- we can not get shortest path from absolute xpath  
+ 2 relative xpath
+	 - // => relative path used double slash to calculate
+	 - it calculate nearest node to locate ur webElement
+	 <div>
+		<div>
+			<p>
+	 - we get shortest xpath 
+		
+		//tagname[@id='value']
+		@id,@name,@class
+
+summary & Interview Questions
+1 What is dynamic xpath?
+2 what is absolute xpath?
+3 what is relative xpath?
