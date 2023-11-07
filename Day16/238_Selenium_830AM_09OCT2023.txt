@@ -1,0 +1,38 @@
+Last Agenda Lecture
+1 Dynamic xpath
+2 why we use dynamic xpath
+	- It is used to locate ur webelement
+	- It allows you to locate elements on a web page based on their dynamic characteristics, such as changing IDs, names, classes, or other attributes.
+ 
+ 1 absolute xpath
+		-/ -> used single slash to calculate 
+		- it starts from its root node or base node => /html 
+		- we can not get shortest path from absolute xpath  
+ 2 relative xpath
+	 - // => relative path used double slash to calculate
+	 - it calculate nearest node to locate ur webElement
+	 <div>
+		<div>
+			<p>
+	 - we get shortest xpath 
+		
+		//tagname[@id='value']
+		@id,@name,@class
+
+summary & Interview Questions
+1 What is dynamic xpath?
+2 what is absolute xpath?
+3 what is relative xpath?
+
+ Test- 2 
+ 
+Today's Agenda Lecture
+1 Dynamic xpath continue
+2 Following
+	e.g (//div[@id='__next']/div[2]//following::li)[2]/a
+3 Child
+	e.g. (//div[@id='__next']/div[2]//child::li)[3]/a
+	
+summary & Interview Questions
+1 How Following Works?
+2 How to calculate Dynamic xpath using child?
