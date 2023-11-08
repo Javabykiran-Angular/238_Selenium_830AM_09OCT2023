@@ -1,0 +1,30 @@
+Last Agenda Lecture
+1 Dynamic xpath continue
+2 Following
+	e.g (//div[@id='__next']/div[2]//following::li)[2]/a
+	driver.fondElement(By.xpath("..."))
+3 Child
+	e.g. (//div[@id='__next']/div[2]//child::li)[3]/a
+	
+summary & Interview Questions
+1 How Following Works?
+2 How to calculate Dynamic xpath using child?
+ 
+Today's Agenda Lecture
+1 How to use scroll bar to window
+Actions act =new Actions(driver);
+act.sendKeys(Keys.Page_Down).build().perform();
+
+	JavaScriptExecutor js =(JavaScriptExecutor)driver;
+	js.executeScript("arguments[0].scrollIntoView(true);",webelement);
+	
+2 Test NG
+	- why we use ?
+	- To execute test cases 
+	- It generate a report for test failuare or pass 
+	- Multiple test case execute 
+
+summary & Interview Questions
+1 How to use scroll bar to window
+2 Why we use test ng?
+3 What is TestNg?
