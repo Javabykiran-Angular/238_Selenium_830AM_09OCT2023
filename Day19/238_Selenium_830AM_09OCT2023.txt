@@ -1,0 +1,47 @@
+Last Agenda Lecture
+1 Revision of Topic 
+locatores
+1 Id
+2 class name 
+3 name
+4 lintText
+5 paratialLinkText
+6 cssSelector
+7 xpath
+8 tag name 
+
+summary 
+Revision of All Main topic 
+Interview Questions
+1 Not Allowed For this Session Revise a Topic after diwali vacation 
+ 
+Today's Agenda Lecture
+1 Test Ng
+
+2 @Test 
+
+3 priority
+4 Testng xml  
+	- we can execute multiple test cases 
+	- it is xml schema format 
+	- it is predefined tag given by testng 
+	
+
+summary & Interview Questions
+
+	class abc{
+		@Test(priority=1,description="....")
+		public void lTest(){
+			....
+		}
+		@Test(priority=2,enabled=false)
+		public void aTest(){
+			....
+		}
+	}
+
+1 What is use of TestNg?
+2 How to set priority to test cases?
+3 @Test annotation you might be knowing, can you explain some of attributes of that annotation like priority
+4 Why to use testNG.xml 
+
