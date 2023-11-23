@@ -1,0 +1,110 @@
+Last Agenda Lecture
+1 Testng Annotations
+2 Freamwork Integration
+
+class config{
+	WebDriver driver;
+	
+	browserSetting(String url){
+	....
+	}
+}
+
+class LoginTest extends Config{
+	String url=null;
+	
+	@BeforeTest 
+	public void accessUrl(){
+		this.url=readPropertyFile();
+	}
+	
+	@BeforeClass
+	public void openingBrowser(){
+		browserSetting(this.url)
+	}
+	@Test(prioprity=1) 
+	public void usernameTest(){
+	...
+	}
+	
+	public String readPropertyFile(){
+	....
+	}
+	
+		
+}
+
+summary & Interview Questions
+
+	@BeforeSuite, @BeforeTest,@BeforeClass, @BeforeMethod,@Test ,
+	@AfterMthod,@AfterClass,@AfterTest,@AfterSuite
+	
+
+1 What is use of @BeforeClass?
+2 What is use of @BeforeMEthod?
+3 Explain Life cyle of testNG annotation?
+4 Explain different type of annotations?
+
+ 
+Today's Agenda Lecture
+1 Freamwork Integration continue
+2 Assert
+3 Hard Assert
+4 Soft Assert
+
+
+summary & Interview Questions
+
+	public WebElement accessById(String id){
+		return driver.findElement(By.id(id))
+	}
+	public WebElement accessByXpath(String xpath){
+		return driver.findElement(By.xpath(xpath))
+	}
+	
+	public WebElement accessByClass(String classname){
+		return driver.findElement(By.classname(classname))
+	}
+	
+	class LoginTestextend config  {
+	
+	@Test(priority=1)
+	public void username(){
+	
+		WebElement emailElement=accessById("...");
+		emailElement.sendKeys("..");
+		...
+		
+		WebElement btnclick=accessByClass("btn");
+		btnclick.click();
+		
+		
+		//step1 
+		WebElement emailerrorElement=accessById("..");
+		String actulaEmailMessge= emailerrorElement.getText();
+		
+		//Step2 
+		String expectedEmailMessage="...";
+		
+		//Step3
+		
+		Assert.assertEquals(actulaEmailMessge,expectedEmailMessage);
+		
+		SoftAssert softassert=new SoftAssert();
+		
+		softassert.assertEquals(actulaEmailMessge,expectedEmailMessage);
+		softassert.assertEquals(...);
+		
+		softassert.assertAll();
+		
+		
+	}
+	
+	}
+	
+	
+
+1 Why we use assert?
+2 What is hard assert?
+3 What is soft Assert?
+4 Difference between hard assert & soft assert?
