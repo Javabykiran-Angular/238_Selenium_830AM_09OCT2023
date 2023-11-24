@@ -1,0 +1,94 @@
+Last Agenda Lecture
+1 Freamwork Integration continue
+2 Assert
+3 Hard Assert
+4 Soft Assert
+
+
+summary & Interview Questions
+
+	public WebElement accessById(String id){
+		return driver.findElement(By.id(id))
+	}
+	public WebElement accessByXpath(String xpath){
+		return driver.findElement(By.xpath(xpath))
+	}
+	
+	public WebElement accessByClass(String classname){
+		return driver.findElement(By.classname(classname))
+	}
+	
+	class LoginTest extend config  {
+	
+	@Test(priority=1)
+	public void username(){
+	
+		WebElement emailElement=accessById("...");
+		emailElement.sendKeys("..");
+		...
+		
+		WebElement btnclick=accessByClass("btn");
+		btnclick.click();
+		
+		
+		//step1 
+		WebElement emailerrorElement=accessById("..");
+		String actulaEmailMessge= emailerrorElement.getText();
+		
+		//Step2 
+		String expectedEmailMessage="...";
+		
+		//Step3
+		
+		Assert.assertEquals(actulaEmailMessge,expectedEmailMessage);
+		
+		SoftAssert softassert=new SoftAssert();
+		
+		softassert.assertEquals(actulaEmailMessge,expectedEmailMessage);
+		softassert.assertEquals(...);
+		
+		softassert.assertAll();		
+		
+	}
+	
+	}
+	
+
+1 Why we use assert?
+2 What is hard assert?
+3 What is soft Assert?
+4 Difference between hard assert & soft assert?
+ 
+Today's Agenda Lecture
+1 Data Provider
+	 - It sends multiple data to any test case for testing
+2 @DataProvider
+
+
+summary & Interview Questions
+
+class LoginTest{
+		
+		@Test(priority=1,dataprovider="testdata")
+		public void loginTest(int id,String username,String password){
+		....
+			
+		
+		}
+		
+		@DataProvider(name="testdata")
+		public Object[][] testdata(){
+		
+			return new Object[][]{
+				{9,"..",".."},
+				{9,"..",".."},
+				{9,"..",".."}
+			};
+		
+		}
+		
+}
+
+
+1 Why we use data provider?
+2 Explain @DataProvider annotation?
