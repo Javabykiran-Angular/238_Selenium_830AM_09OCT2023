@@ -1,0 +1,43 @@
+Last Agenda Lecture
+1 Data Provider
+	 - It sends multiple data to any test case for testing
+2 @DataProvider
+
+
+summary & Interview Questions
+
+class LoginTest{
+		
+		@Test(priority=1,dataprovider="testdata")
+		public void loginTest(int id,String username,String password){
+		....
+			
+		
+		}
+		
+		@DataProvider(name="testdata")
+		public Object[][] testdata(){
+		
+			return new Object[][]{
+				{9,"..",".."},
+				{9,"..",".."},
+				{9,"..",".."}
+			};
+		
+		}
+		
+}
+
+
+1 Why we use data provider?
+2 Explain @DataProvider annotation?
+
+Today's Agenda Lecture
+1 Continue Data Provider
+2 Dynamic screen shot 
+
+
+
+summary & Interview Questions
+1 How we can integrate dataprovider with test case to give test data?
+2 How excel sheet work with dataprovider?
