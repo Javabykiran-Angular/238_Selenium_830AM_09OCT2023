@@ -1,0 +1,47 @@
+Last Lecture Agenda
+1 Test 3 
+
+summary & Interview Questions
+ Not Allowed for this Session Due to the Test 
+
+Today's Lecture Agenda
+1 Test 3 Discussion 
+2 How to write automation test cases for radio button
+
+
+	
+	class radioTest extends config{
+		
+		@Test(priority=1)
+		public void radioTest(){
+			WebElement radioMaleelement=accessbyId("..");
+			radioMaleelement.click();
+			
+			boolean maleSelect=radioMaleelement.isSelected();
+			Assert.assertEquals(maleSelect,true);
+			
+		}
+		
+		@Test(priority=2)
+		public void radioTest_female(){
+			WebElement radioMaleelement=accessbyId("..");
+			WebElement radiofemaleelement=accessbyId("..");
+			radiofemaleelement.click();
+			
+			boolean femaleSelect=radiofemaleelement.isSelected();
+			
+			if(adiofemaleelement.isSelected() && !radioMaleelement.isSelected()){
+				Assert.assertEquals(femaleSelect,true);
+			}
+			
+			
+			
+		}
+		
+	}
+
+summary & Interview Questions
+1 How to write automation test cases for radio button
+
+
+https://www.youtube.com/watch?v=1cecOdE2ZN8&list=PLa3i9wpSPojGRBeYmmhVkl76bmqih4vGm&index=2
