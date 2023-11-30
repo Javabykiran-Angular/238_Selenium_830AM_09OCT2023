@@ -1,0 +1,57 @@
+Last Lecture Agenda
+1 Test 3 Discussion 
+2 How to write automation test cases for radio button
+
+
+	
+	class radioTest extends config{
+		
+		@Test(priority=1)
+		public void radioTest(){
+			WebElement radioMaleelement=accessbyId("..");
+			radioMaleelement.click();
+			
+			boolean maleSelect=radioMaleelement.isSelected();
+			Assert.assertEquals(maleSelect,true);
+			
+		}
+		
+		@Test(priority=2)
+		public void radioTest_female(){
+			WebElement radioMaleelement=accessbyId("..");
+			WebElement radiofemaleelement=accessbyId("..");
+			radiofemaleelement.click();
+			
+			boolean femaleSelect=radiofemaleelement.isSelected();
+			
+			if(radiofemaleelement.isSelected() && !radioMaleelement.isSelected()){
+				Assert.assertEquals(femaleSelect,true);
+			}
+			
+			
+			
+		}
+		
+	}
+
+summary & Interview Questions
+1 How to write automation test cases for radio button
+
+
+Today's Lecture Agenda
+1 What is maven?
+	- It is project mangement project tool 
+	- It is manage to the dependancy jar 
+	- it compile,test,build, run & reporting by maven itseldf
+	- it is used for java project 
+2 How maven works? 
+3 POM.xml
+	- Project Object Model
+4 Integrate selenium in maven 
+
+summary & Interview Questions
+1 What is maven?
+2 What is use of pom.xml?
+3 How to integrate selenium in maven?
+4 How maven works? 
+
