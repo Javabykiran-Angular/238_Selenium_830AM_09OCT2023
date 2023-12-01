@@ -1,0 +1,22 @@
+Last Lecture Agenda
+1 What is maven?
+	- It is project mangement project tool 
+	- It is manage to the dependancy jar 
+	- it compile,test,build, run & reporting by maven itseldf
+	- it is used for java project 
+2 How maven works? 
+3 POM.xml
+	- Project Object Model
+4 Integrate selenium in maven 
+
+summary & Interview Questions
+1 What is maven?
+2 What is use of pom.xml?
+3 How to integrate selenium in maven?
+4 How maven works? 
+
+Today's Lecture Agenda
+1 Full Integration with Maven
+
+summary & Interview Questions
+1 How to integrate freamework in maven 
